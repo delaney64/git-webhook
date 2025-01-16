@@ -94,7 +94,7 @@ resource "aws_lambda_function" "github_logs_forwarder" {
   environment {
     variables = {
       S3_BUCKET_NAME = aws_s3_bucket.github_logs.id
-      GITHUB_WEBHOOK_SECRET = "your-webhook-secret"  # Generate this with: openssl rand -hex 32
+      GITHUB_WEBHOOK_SECRET = "5sZsPR2xetIm6+5/TSLaO2nyeU71EIaYqPgg8uuhjsQ="  # Generate this with: openssl rand -hex 32
     }
   }
 }
